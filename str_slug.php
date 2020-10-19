@@ -1,3 +1,4 @@
+<?php
 /**
  * Tranforma o texto em uma url amigável
  * @param string $string
