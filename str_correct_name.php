@@ -7,7 +7,7 @@
  * @return string
  */
 function str_correct_name(string $value, array $ignore = ['da', 'de', 'do', 'dos']): string {
-   $words = explode(" ", strtolower(trim($value)));
+   $words = explode(" ", filter_var(mb_strtolower(trim($value)), FILTER_SANITIZE_STRIPPED));
 
    $correctedName = array_map(function($name) use($ignore) {
       return (in_array($name, $ignore)) ? $name : ucfirst($name);
