@@ -1,3 +1,4 @@
+<?php
 /**
  * Corrige um nome ignorando as palavras (da, de, do, dos) por padrão
  *
